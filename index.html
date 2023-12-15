@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-12</title>
+</head>
+<body>
+    
+<script>
+var user = prompt("Enter Integer");
+if(user>0){
+    document.write("Number: "+user+ "<br>")
+    document.write("Round of value: "+Math.round(user)+ "<br>")
+    document.write("Floor value: "+Math.floor(user)+ "<br>")
+    document.write("Ceil value: "+Math.ceil(user)+ "<br>")
+}else{
+    document.write("The Number Which have you enter is negative")
+}
+document.write("<br>")
+if(user<0){
+    document.write("Number: "+user+ "<br>")
+    document.write("Round of value: "+Math.round(user)+ "<br>")
+    document.write("Floor value: "+Math.floor(user)+ "<br>")
+    document.write("Ceil value: "+Math.ceil(user)+ "<br>")
+}else{
+    document.write("The Number Which have you enter is Positive")
+}
+document.write("<br>")
+var Number= prompt("Enter A Number")
+if (Number<0){
+    var x = Math.abs(Number)
+    document.write("The absolute value of "+Number+" is "+x)
+}else{
+    document.write("The absolute value of "+Number+" is "+Number)
+}
+
+document.write("<br>")
+var profit = "200" + "150";
+alert(profit)
+
+
+var currentAge = prompt("Enter your age.");
+var qualifyingAge = parseInt(currentAge) + 1;
+document.write(qualifyingAge)
+document.write("<br>")
+var rand = Math.random();
+var imp = (rand * 6) + 1;
+var res = Math.floor(imp);
+document.write("Random Dice Value is: "+res)
+document.write("<br>")
+var x = (Math.floor(Math.random() * 2) == 0);
+    if(x){
+        document.write("2"+"<br>"+"Random Coin value: Heads");
+    }else{
+        document.write("1"+"<br>"+"Random Coin value: Tails");
+    }
+document.write("<br>")
+var rnd = Math.floor(Math.random()*100)+1;
+document.write(rnd)
+document.write("<br>")
+
+var weightInput = prompt('Please enter your weight:');
+var weight = parseFloat(weightInput.replace(/[^\d.]/g, ''));
+if (!isNaN(weight)) {
+  document.write('<h1>Your Weight:</h1>');
+  document.write('<p>' + weight.toFixed(2) + ' kgs</p>');
+} else {
+  document.write('<p>Invalid input. Please enter a valid weight.</p>');
+}
+document.write("<br>")
+
+
+</script>
+
+</body>
+</html>
